@@ -44,7 +44,9 @@ export default function App() {
       </div>
       <>
         {isLoading ? (
-          <p>Loading data…</p>
+          <div className="loading">
+            <p>Loading data…</p>
+          </div>
         ) : WeatherData ? (
           <div className="weather-cards">
             <div className="weather-card">
